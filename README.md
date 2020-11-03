@@ -14,16 +14,7 @@ Run the following commands
 
 **Deploy the build**
 
-    gcloud run deploy --image gcr.io/instana-solution-architects/nodejs-test-justyn --platform managed
-
-Add Environment Variables:-
-
- 
-
-     INSTANA_ENDPOINT_URL = **SERVERLESS ENDPOINT** 
-     INSTANA_AGENT_KEY =  Agent Key
-
-    
+    gcloud run deploy --image gcr.io/instana-solution-architects/nodejs-test-justyn --platform managed  --set-env-vars "INSTANA_AGENT_KEY1=[AgentKey}"  --set-env-vars " INSTANA_ENDPOINT_URL={Serverless URL]"
 
 Check logs for goodness:-
 
